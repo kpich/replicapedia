@@ -1,1 +1,20 @@
-hello, add view!
+
+<%= form_for :paper, url: papers_path do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :authors %><br>
+    <%= f.text_field :authors %>
+  </p>
+
+  <p>
+    <%= f.label :year %><br>
+    <%= f.text_field :year %>
+
+  <p>
+  <%= f.submit %>
+  </p>
+<% end %>
